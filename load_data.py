@@ -53,7 +53,32 @@ if __name__ == '__main__':
         ("PORTE FENETRE 4_pvc.xlsx", "PORTE_FENETRE_4_PVC"),
         ("soufflet_pvc.xlsx", "SOUFFLET_PVC"),
     ]
+    
+def import_excel_to_db():
+    files = [
+        ("fixed_window_pricing.xlsx", "FIXED_WINDOW_PRICING"),
+        ("coulissant_pvc.xlsx", "COULISSANT_PVC"),
+        ("OB 1 VANTAIL_pvc.xlsx", "OB_1_VANTAIL_PVC"),
+        ("OF 1 VANTAIL_pvc.xlsx", "OF_1_VANTAIL_PVC"),
+        ("OF 2 VANTAUX_pvc.xlsx", "OF_2_VANTAUX_PVC"),
+        ("OF 3 VANTAUX_pvc.xlsx", "OF_3_VANTAUX_PVC"),
+        ("OF 4 VANTAUX_pvc.xlsx", "OF_4_VANTAUX_PVC"),
+        ("OF2_1 FIXE_pvc.xlsx", "OF2_1_FIXE_PVC"),
+        ("OF2_2 FIXES_pvc.xlsx", "OF2_2_FIXES_PVC"),
+        ("Porte 1 vantail_pvc.xlsx", "PORTE_1_VANTAIL_PVC"),
+        ("PORTE FENETRE 1_pvc.xlsx", "PORTE_FENETRE_1_PVC"),
+        ("PORTE FENETRE 2_fixe 1_pvc.xlsx", "PORTE_FENETRE_2_FIXE_1_PVC"),
+        ("PORTE FENETRE 2_fixe 2_pvc.xlsx", "PORTE_FENETRE_2_FIXE_2_PVC"),
+        ("PORTE FENETRE 2_pvc.xlsx", "PORTE_FENETRE_2_PVC"),
+        ("PORTE FENETRE 3_pvc.xlsx", "PORTE_FENETRE_3_PVC"),
+        ("PORTE FENETRE 4_pvc.xlsx", "PORTE_FENETRE_4_PVC"),
+        ("soufflet_pvc.xlsx", "SOUFFLET_PVC"),
+    ]
 
+    for file, type_name in files:
+        load_excel_to_db(file, type_name)
+
+    
     for file, type_name in files:
         load_excel_to_db(file, type_name)
 
