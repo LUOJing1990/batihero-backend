@@ -2,6 +2,9 @@ from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from utils import get_price
 import requests  # ✅ 新增导入
+from load_data import import_excel_to_db
+
+import_excel_to_db()
 
 app = Flask(__name__)
 CORS(app)
