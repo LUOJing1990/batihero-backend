@@ -1,0 +1,6 @@
+Flask
+SQLAlchemy
+pandas
+openpyxl
+flask-cors
+requests
