@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>BatiHero — Devis Fenêtres</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <section id="devis-widget" style="border:1px solid #ddd; padding:15px; max-width:360px; margin:30px auto;">
+    <h2>Obtenez votre devis</h2>
+
+    <label>Type de fenêtre:<br>
+      <select id="gh-type">
+        <option value="FIXED_WINDOW_PRICING">Fenêtre fixe</option>
+        <option value="COULISSANT_PVC">Coulissant</option>
+        <option value="OB_1_VANTAIL_PVC">OB 1 vantail</option>
+        <option value="OF_1_VANTAIL_PVC">OF 1 vantail</option>
+        <option value="OF_2_VANTAUX_PVC">OF 2 vantaux</option>
+        <option value="OF_3_VANTAUX_PVC">OF 3 vantaux</option>
+        <option value="OF_4_VANTAUX_PVC">OF 4 vantaux</option>
+        <option value="OF2_1_FIXE_PVC">OF2_1 Fixe</option>
+        <option value="OF2_2_FIXES_PVC">OF2_2 Fixes</option>
+        <option value="PORTE_1_VANTAIL_PVC">Porte 1 vantail</option>
+        <option value="PORTE_FENETRE_1_PVC">Porte-fenêtre 1</option>
+        <option value="PORTE_FENETRE_2_FIXE_1_PVC">Porte-fenêtre 2 Fixe 1</option>
+        <option value="PORTE_FENETRE_2_FIXE_2_PVC">Porte-fenêtre 2 Fixe 2</option>
+        <option value="PORTE_FENETRE_2_PVC">Porte-fenêtre 2</option>
+        <option value="PORTE_FENETRE_3_PVC">Porte-fenêtre 3</option>
+        <option value="PORTE_FENETRE_4_PVC">Porte-fenêtre 4</option>
+        <option value="SOUFFLET_PVC">Soufflet</option>
+      </select>
+    </label><br><br>
+
+    <label>Largeur (mm):<br>
+      <input id="gh-width" type="number" placeholder="ex. 1250">
+    </label><br><br>
+
+    <label>Hauteur (mm):<br>
+      <input id="gh-height" type="number" placeholder="ex. 1451">
+    </label><br><br>
+
+    <button id="gh-devisBtn" class="btn btn-green">Obtenir le prix</button>
+    <div id="gh-result" style="margin-top:10px;color:#007BFF;"></div>
+  </section>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
