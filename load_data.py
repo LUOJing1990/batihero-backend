@@ -3,7 +3,7 @@ from models import Base, engine, Session, WindowType, PriceEntry
 
 def load_excel_to_db(filename, type_name):
     # 读取 Excel
-    df = pd.read_excel(f'data/{filename}', index_col=0)
+    df = pd.read_excel(f'data/{filename}', index_col=0, engine='openpyxl')
     Base.metadata.create_all(engine)
     session = Session()
 
