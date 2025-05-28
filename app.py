@@ -39,6 +39,10 @@ def api_feedback():
     except Exception as e:
         print("❌ 错误：", str(e))
         return jsonify({"status": "error", "message": str(e)}), 500
+        
+@app.route('/ping')
+def ping():
+    return 'pong', 200
 
 # ✅ 使用 Render 要求的端口绑定方式
 if __name__ == '__main__':
